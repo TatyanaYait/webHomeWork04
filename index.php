@@ -50,10 +50,10 @@ $work = [
 
   <!-- The Grid -->
   <div class="w3-row-padding">
-  
+
     <!-- Left Column -->
     <div class="w3-third">
-    
+
       <div class="w3-white w3-text-grey w3-card-4">
         <div class="w3-display-container">
           <img src="https://imgfon.ru/Images/Details_img_880px/Animals/glaza-belyy_fon-kotik-morda-polosatyy.webp" style="width:100%" alt="Avatar">
@@ -111,17 +111,18 @@ $work = [
 
     <!-- Right Column -->
     <div class="w3-twothird">
-    
+
       <div class="w3-container w3-card w3-white w3-margin-bottom">
         <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i><?=$experience?></h2>
-        <div class="w3-container">
+        
         <?php for ($i = 0; $i < count($work); $i++) {?>
+          <div class="w3-container">
           <h5 class="w3-opacity"><b><?=$work[$i]["name"]?> </b></h5>
           <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i><?=$work[$i]["date of the beginning"]?> - <?=$work[$i] ["date of completion"]?></h6>
           <p><?php echo $work[$i]["text"]?></p>
           <hr>
-          <?php }?>
-        </div>
+          </div>
+          <?php }?>        
       </div>
 
       <div class="w3-container w3-card w3-white">
@@ -147,10 +148,10 @@ $work = [
 
     <!-- End Right Column -->
     </div>
-    
+
   <!-- End Grid -->
   </div>
-  
+
   <!-- End Page Container -->
 </div>
 
